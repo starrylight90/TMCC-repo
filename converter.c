@@ -4,11 +4,13 @@
 int main()
 {
 	char entry;
-	int t0,t1,m0,z;
+	int t0,t1,m0,z,n=1;
 	float c1,c2,c3,m1;
 	
-		printf("Enter T for temperature, C for currency and M for mass\n");
-	    scanf("%c",&entry);
+	while(n!=0)
+	{
+		printf("Enter T for temperature, C for currency, M for mass and Z for exiting the program\n");
+	    scanf(" %c",&entry);
 	    
 	switch(entry) //Switching starts
 	{
@@ -316,10 +318,14 @@ int main()
 			
 			break;
 			
-				
-		    default:
-		    	printf("Enter valid value");
-		    	break;
+			case('Z'):
+				printf("Thankyou for using the program");
+				n=0;
+				break;
+			
+		        default:
+		    	        printf("Enter valid value");
+		    	        break;
 					}
-
+             }
 }
