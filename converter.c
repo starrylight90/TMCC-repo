@@ -313,7 +313,7 @@ int main()
 			}
 			else
 			{
-				printf("Enter valid number");
+				printf("Enter valid number\n");
 			}
 			
 			break;
@@ -324,7 +324,7 @@ int main()
 				break;
 			
 		        default:
-		    	        printf("Enter valid value");
+		    	        printf("Enter valid value\n");
 		    	        break;
 					}
              }
